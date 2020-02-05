@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[rightcaption, raggedright]{sidecap}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[usefilenames,% Important for XeLaTeX
+  RMstyle=Light,
+  SSstyle=Light,
+  TTstyle=Light,
+  DefaultFeatures={Ligatures=Common}]{plex-otf} %
+\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be monospaced
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=[rgb]{0.5,0.5,0.5},
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=magenta,
+}
+\urlstyle{same}
+
+
+\title{\LARGE A New RFC Template}
+\author{Erin Sparling, \href{mailto:sparling@cooper.edu}{sparling@cooper.edu}, Cooper Union}
+
+% citations
+% https://www.sharelatex.com/learn/Hyperlinks
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\thispagestyle{empty}
+% \setcounter{section}{0}
+
+
+% \addcontentsline{toc}{section}{Abstract}
+
+\newpage
+
+\section{Introduction}
+
+The internet (here used as a proxy for a rough collection of protocols, servers, interconnects and activities) approaches infinity in both its complexity and rate of change. Attempting to teach the internet is a lesson in futility, as learning any topic results in expedient irrelevance, and betting on a future direction can have dramatic consequences for students work as well as their careers. Constructing curriculum, and convincing institutions that the curriculum is worth exploring, is therefore a waste of time at best, and actively against the best interestes of the students at worst. Despite these concerns, "modern" approaches to the web have been taught for the better part of two decades.
+
+This document attempts to templatize the writings of FA326 Interactive Design Concepts.
+
+\section*{New Topics to Cover}
+
+\begin{enumerate}
+    \item The evolution of approaching "free" 
+    \item Services begged or borrowed (github, google groups, slack, glitch, apple school edu account)
+    \item A history of techniques explored in the Advanced classes, and their trickle-down effect into the Intro class.
+    \item The fickle state of APIs, and their utility within works of art
+    \item An approach to service design for students' projects, in response to API changes
+\end{enumerate}
+
+\newpage
+
+
+\subsection{Iterations}
+
+
+
+\addcontentsline{toc}{section}{Appendix}
+\section*{Appendix}
+\subsection*{Historical Assignments for IDC FA326, Spring 2018 \cite{PINNED-TWEET}} 
+\begin{enumerate}
+    \item Create a malicious chrome extension
+    \item Build a http server to mock an object that should be connected to the internet, but currently is't
+    \item Write an RFC for objects that should not be connected to the internet, but were
+    \item Build an api that presents personal data in a way other students could consume
+    \item Document services and their apis that you use on a weekly basis
+    \item Propose a way to undermine yourself, based on data that you already expose
+    \item Create a dark user experience
+    \item Pecha-Kutcha on the above 13 topics, in a direction you'd like to explore
+    \item Build an MVP
+\end{enumerate}
+
+\addcontentsline{toc}{section}{References}
+\bibliography{./biblio.bib}
+\bibliographystyle{ieeetr}
+ 
+\end{document}
+\end
